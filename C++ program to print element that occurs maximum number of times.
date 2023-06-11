@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout<<"enter size of array"<<endl;
+    int n;
+    cin>>n;
+    int maxi=0;
+    map<int,int>mpp;
+    cout<<"enter the elements of array"<<endl;
+    for(int i=0;i<n;i++){
+        int x;
+        cin>>x;
+        mpp[x]=mpp[x]+1;
+        if(mpp[x]>mpp[maxi]){
+            maxi=x;
+        }
+    }
+    cout<<maxi;
+    return 0;
+}
