@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n ;
+    int a,one ,two, zero;
+    cin>>n;
+    vector<int>vec;
+    for(auto it=0;it!=n;it++)
+    {
+        cin>>a;
+        vec.push_back(a);
+        
+        if(a!=0 || a!=2 || a!=1){
+            cout<<"Invalid Input"<<endl;
+         return 0;
+        }   }
+        sort(vec.begin(),vec.end());
+        cout<<"Sorted List is "<<endl;
+        for(auto it: vec){
+            cout<<it<<endl;
+        }
+return 0;
+        }
